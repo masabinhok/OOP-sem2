@@ -1,1 +1,127 @@
 Object Oriented Programming
+Course Title: Advanced C++ Programming Skills
+Year: I
+Part: II
+Lecture: 3 hours/week
+Tutorial: 1 hour/week
+Practical: 3 hours/week
+
+Course Outline:
+1. Introduction to Object-Oriented Programming (3 hours)
+1.1 History of Programming Languages
+1.2 Need for Object-Oriented Programming
+1.3 Object-Oriented Programming vs. Procedural Programming
+1.4 Concepts of Object-Oriented Programming
+1.5 Popular Object-Oriented Languages
+1.6 Advantages of OOP
+1.7 Disadvantages of OOP
+
+2. Basics of C++ Programming (5 hours)
+2.1 C++ Program Structure
+2.2 Character Set and Tokens
+2.3 Variable Declaration and Expression
+2.4 Data Types
+2.5 Type Conversion and Casting
+2.6 User-Defined Constant (const)
+2.7 Reference Variables
+2.8 Conditions and Looping
+2.9 Namespace Scope
+2.10 Functions
+2.10.1 Function Overloading
+2.10.2 Inline Functions
+2.10.3 Default Arguments
+2.10.4 Pass by Reference and Return by Reference
+2.11 Array, Pointer, and String
+2.12 Structure and Unions
+2.13 Enumeration
+2.14 Dynamic Memory Allocation
+
+3. Objects and Classes (7 hours)
+3.1 C++ Classes
+3.2 Objects and Member Access
+3.3 Relation of Object, Class, and Memory
+3.4 Defining Member Function
+3.5 Defining Outer Function Inline
+3.6 Objects as Members
+3.7 Constructors and Destructors
+3.8 Object as Function Arguments
+3.9 Returning Objects from Functions
+3.10 Array of Objects
+3.11 Pointer to Objects
+3.12 Dynamic Memory Allocation for Objects
+3.13 Dynamic Constructors
+3.14 Pointer
+3.15 Static Data Member and Static Member Function
+3.16 Constant Member Functions and Constant Objects
+3.17 Friend Functions and Friend Classes
+
+4. Operator Overloading (5 hours)
+4.1 Overloadable and Non-Overloadable Operators
+4.2 Syntax of Operator Overloading
+4.3 Operator Overloading Using Member Operator Functions
+4.4 Operator Overloading Using Non-Member Functions
+4.5 Unary Operator Overloading
+4.6 Binary Operator Overloading
+4.7 Type Conversion Between Objects
+4.8 Explicit Constructors
+
+5. Inheritance (5 hours)
+5.1 Base Class and Derived Class
+5.2 Protected Access Specifier
+5.3 Derived Class Declaration
+5.4 Is-a Relation and Has-a Relation
+5.5 Public, Protected, and Private Inheritance
+5.6 Member Overriding
+5.7 Forms of Inheritance
+5.8 Constructors in Derived Class
+5.9 Destructor in Derived Class
+5.10 Need for Virtual Base Class
+
+6. Virtual Functions (4 hours)
+6.1 What is a Virtual Function
+6.2 Need for Virtual Functions
+6.3 Pointer to Derived Class
+6.4 Array of Pointers to Base Class
+6.5 Pure Virtual Functions and Abstract Class
+6.6 Virtual Destructors
+6.7 Reinterpret Cast Operator
+6.8 Run-time Type Information
+
+7. Stream Computation (6 hours)
+7.1 Input/Output Stream Class Hierarchy
+7.2 Testing Stream Errors
+7.3 Unformatted Input/Output and Formatted Input/Output
+7.4 Stream Operator Overloading
+7.5 File Input/Output with Streams
+7.6 File Stream Class Hierarchy
+7.7 ASCII and Binary Files
+7.8 Read/Write from File
+7.9 Sequential Access to File
+7.10 Random Access to File
+7.11 File Access Pointers and Their Manipulators
+7.12 Testing Errors During File Operations
+7.13 File Input/Output with Member Functions
+
+8. Templates (6 hours)
+8.1 Function Templates
+8.2 Overloading Function Templates
+8.3 Class Templates
+8.4 Derived Class Templates
+8.5 Introduction to Standard Template Library (STL)
+8.5.1 Components of STL
+8.5.2 Containers
+8.5.3 Iterators
+8.5.4 Algorithms
+
+9. Exception Handling (4 hours)
+9.1 Basics of exception handling
+9.2 Advantage over conventional error handling
+9.3 Exception handling mechanism
+9.4 Multiple handlers
+9.5 Catching all exceptions
+9.6 Rethrowing exception
+9.7 Exception with arguments
+9.8 Exceptions specification for function
+9.9 Exceptions in constructors and destructors
+9.10 Handling uncaught exceptions
+9.11 Handling unexpected exception
