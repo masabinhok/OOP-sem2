@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 
-inline float calcSi(float p, float t, float r=12.5){
+inline float calcSi(float p, float t, float r=15){
   return(p*t*r)/100;
 }
 
