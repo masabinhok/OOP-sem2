@@ -14,6 +14,7 @@ int main () {
   cout<<"Enter p and t: "<<endl;
   cin>>p>>t;
   cout<<"Simple Interest = "<<calcSi(p,t)<<endl;
+  return 0;
 }
 
 

@@ -17,7 +17,7 @@ public:
         cout << "The coordinates are: " << x << " and " << y << endl;
     }
 
-    float distance(const Point &p2) const {
+    float distance( Point p2)  {
         return sqrt((p2.x - x) * (p2.x - x) + (p2.y - y) * (p2.y - y));
     }
 };

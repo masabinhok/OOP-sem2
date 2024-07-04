@@ -17,7 +17,7 @@ int main () {
 
   int l, a,b,c;
   float r, h;
-  cout<<"Enter the lenght of square:"<<endl;
+  cout<<"Enter the lenght of cube:"<<endl;
   cin>>l;
   vol(l);
   cout<<"Enter the length breadth and height of cuboid: "<<endl;
