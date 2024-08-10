@@ -6,11 +6,12 @@ void calcMonthlyAvg(int expenditure[][12], int num_years);
 void calcYearlyAvg(int expenditure[][12], int num_years);
 void calcRangeAvg(int expenditure[][12], int num_years);
 void addData(int expenditure[][12], int num_years);
+void displayTable(int expenditure[][12], int num_years);
 
 void addData(int expenditure[][12], int num_years) {
     for (int i = 0; i < num_years; i++) {
         for (int j = 0; j < 12; j++) {
-            cout << "Enter the expenditure for year " << i + 1 << " month " << j + 1 << ": ";
+            cout << "Enter the expenditure for year " << i + 1 << " month " << j + 1 << ": $";
             cin >> expenditure[i][j];
         }
     }
@@ -29,7 +30,7 @@ void calcMonthlyAvg(int expenditure[][12], int num_years) {
     month--;
 
     if (year < num_years && month < 12) {
-        cout << "The expenditure for year " << year + 1 << " month " << month + 1 << " is: " << expenditure[year][month] << endl;
+        cout << "The expenditure for year " << year + 1 << " month " << month + 1 << " is: $" << expenditure[year][month] << endl;
     } else {
         cout << "Invalid year or month. Please try again." << endl;
     }
@@ -47,8 +48,8 @@ void calcYearlyAvg(int expenditure[][12], int num_years) {
             yearlySum += expenditure[year][j];
         }
         int yearlyAvg = yearlySum / 12;
-        cout << "The total expenditure is: " << yearlySum << endl;
-        cout << "The yearly average for year " << year + 1 << " is: " << yearlyAvg << endl;
+        cout << "The total expenditure for year " << year + 1 << " is: $" << yearlySum << endl;
+        cout << "The yearly average for year " << year + 1 << " is: $" << yearlyAvg << endl;
     } else {
         cout << "Invalid year. Please try again." << endl;
     }
@@ -84,14 +85,30 @@ void calcRangeAvg(int expenditure[][12], int num_years) {
             month_count++;
         }
     }
-
     if (month_count > 0) {
         int rangeAvg = rangeSum / month_count;
-        cout << "The total expenditure over the range is: " << rangeSum << endl;
-        cout << "The average expenditure per month over the range is: " << rangeAvg << endl;
+        cout << "The total expenditure over the range is: $" << rangeSum << endl;
+        cout << "The average expenditure per month over the range is: $" << rangeAvg << endl;
     } else {
         cout << "Invalid range. Please try again." << endl;
     }
+}
+
+void displayTable(int expenditure[][12], int num_years) {
+    cout << "Expenditure table" << endl;
+    int tableSum = 0;
+    int month_count=0;
+    for (int i = 0; i < num_years; i++) {
+        cout << "Year " << i + 1 << "\t";
+        for (int j = 0; j < 12; j++) {
+            tableSum+=expenditure[i][j];
+            month_count++;
+            cout << "$" << expenditure[i][j] << ' ';
+        }
+        cout << endl;
+    }
+    cout<<"Total Expenditure: $"<<tableSum<<endl;
+    cout<<"Avg Expenditure: $"<<int(tableSum/month_count)<<endl;
 }
 
 int main() {
@@ -109,6 +126,7 @@ int main() {
         cout << "1. Monthly Expenditure" << endl;
         cout << "2. Yearly Average" << endl;
         cout << "3. Average over a range of time" << endl;
+        cout << "4. Display expenditure table" << endl;
         cout << "69. Exit" << endl;
 
         cout << "Enter your choice: ";
@@ -123,6 +141,9 @@ int main() {
                 break;
             case 3:
                 calcRangeAvg(expenditure, num_years);
+                break;
+            case 4:
+                displayTable(expenditure, num_years);
                 break;
             case 69:
                 cout << "Exiting the program." << endl;
