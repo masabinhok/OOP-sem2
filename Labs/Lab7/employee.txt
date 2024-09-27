@@ -1,0 +1,12 @@
+Name: alu
+Post: piyaz
+Salary: 4233
+--------------------------
+Name: al
+Post: piya
+Salary: 24345
+--------------------------
+Name: a
+Post: piy
+Salary: 4.32424e+006
+--------------------------
