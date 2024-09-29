@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int & rbr(int & a ){
+int & rbr(int &a ){
   return a;
 }
 //because of the '&' operator before rbr, it now returns by reference which means, the int & a takes a refrence of x instead of just its copy, and & rbr returns x as a whole.
